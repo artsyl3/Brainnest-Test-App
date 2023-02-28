@@ -1,16 +1,19 @@
 const caesarCipher = (key) => {
   const letters = [...Array(26)].map((_, i) => String.fromCharCode(i + 97));
 
-  const enchiper = (string) => {
+  const encipher = (string) => {
     console.log(string);
     console.log(key);
-    console.log(letters);
+    return string;
   }
-  const dechiper = (string) => {
+  const decipher = (string) => {
     console.log(string);
     console.log(key);
+    return string;
   }
-  return {enchiper, dechiper}
+  return {encipher, decipher}
 }
 
-caesarCipher(1).enchiper("abc");
+caesarCipher(1).encipher("abc")
+
+module.exports = caesarCipher;
