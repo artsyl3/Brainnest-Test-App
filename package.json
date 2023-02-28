@@ -1,0 +1,28 @@
+{
+  "name": "test-for-library-app",
+  "version": "1.0.0",
+  "description": "Unit Testing using Jest. Team project.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artStyl3/Test-for-library-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artStyl3/Test-for-library-App/issues"
+  },
+  "homepage": "https://github.com/artStyl3/Test-for-library-App#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.4.3",
+    "jest": "^29.4.3"
+  }
+}
