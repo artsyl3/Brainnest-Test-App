@@ -17,10 +17,13 @@ const caesar = (type, string, key) => {
     const letter = element.toLowerCase();
     let changedLetterIndex;
     //getting the index of the letter I need to replace with depending on the type encipher/decipher
-    if (type === "encipher") {
-      changedLetterIndex = (letters.indexOf(letter) + key) % 26;
-    } else if (type === "decipher"){
-      changedLetterIndex = (letters.indexOf(letter) - key) % 26;
+    switch (type) {
+      case "encipher":
+        changedLetterIndex = (letters.indexOf(letter) + key) % 26;
+        break;
+      case "decipher":
+        changedLetterIndex = (letters.indexOf(letter) - key) % 26;
+        break;
     }
     if (letters.includes(letter)){
       //verifing if element is in lower or uppercase so I can keep it
