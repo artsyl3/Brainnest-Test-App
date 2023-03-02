@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677778188775" clover="3.2.0">
-  <project timestamp="1677778188775" name="All files">
-    <metrics statements="44" coveredstatements="44" conditionals="16" coveredconditionals="16" methods="14" coveredmethods="14" elements="74" coveredelements="74" complexity="0" loc="44" ncloc="44" packages="1" files="5" classes="5"/>
+<coverage generated="1677789791313" clover="3.2.0">
+  <project timestamp="1677789791313" name="All files">
+    <metrics statements="24" coveredstatements="24" conditionals="6" coveredconditionals="6" methods="8" coveredmethods="8" elements="38" coveredelements="38" complexity="0" loc="24" ncloc="24" packages="1" files="4" classes="4"/>
     <file name="analyzeArray.js" path="D:\web development\Brainnest\Brainnest_advanced_Week4_Team\Test-for-library-App\src\analyzeArray.js">
       <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
@@ -14,29 +14,6 @@
       <line num="10" count="1" type="stmt"/>
       <line num="12" count="1" type="stmt"/>
       <line num="14" count="1" type="stmt"/>
-    </file>
-    <file name="caesarCipher.js" path="D:\web development\Brainnest\Brainnest_advanced_Week4_Team\Test-for-library-App\src\caesarCipher.js">
-      <metrics statements="20" coveredstatements="20" conditionals="10" coveredconditionals="10" methods="6" coveredmethods="6"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="4" count="28" type="stmt"/>
-      <line num="6" count="28" type="stmt"/>
-      <line num="8" count="28" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="13" count="728" type="stmt"/>
-      <line num="15" count="28" type="stmt"/>
-      <line num="17" count="426" type="stmt"/>
-      <line num="20" count="426" type="cond" truecount="2" falsecount="0"/>
-      <line num="22" count="213" type="stmt"/>
-      <line num="23" count="213" type="stmt"/>
-      <line num="25" count="213" type="stmt"/>
-      <line num="26" count="213" type="stmt"/>
-      <line num="28" count="426" type="cond" truecount="2" falsecount="0"/>
-      <line num="30" count="346" type="cond" truecount="2" falsecount="0"/>
-      <line num="32" count="226" type="cond" truecount="2" falsecount="0"/>
-      <line num="34" count="120" type="cond" truecount="2" falsecount="0"/>
-      <line num="37" count="426" type="stmt"/>
-      <line num="39" count="28" type="stmt"/>
-      <line num="42" count="1" type="stmt"/>
     </file>
     <file name="calculator.js" path="D:\web development\Brainnest\Brainnest_advanced_Week4_Team\Test-for-library-App\src\calculator.js">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
