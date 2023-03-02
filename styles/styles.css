@@ -1,3 +1,9 @@
+:root {
+  --color-bg: #f1fbff;
+  --color-action: #7fffd4;
+  --color-action-variant: #004d4d;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,7 +13,7 @@
 }
 
 main {
-  background-color: rgb(241, 251, 255);
+  background-color: #f1fbff;
 }
 
 h1 {
@@ -24,17 +30,40 @@ a {
   text-decoration: none;
 }
 
+.test-results {
+  height: 93vh;
+  width: 7vh;
+  position: fixed;
+  top: 7vh;
+  right: 0;
+  background-color: var(--color-action);
+  box-shadow: -5px 10px 10px 1px silver;
+  z-index: 5001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.test-results:hover {
+  border-radius: 10px;
+  background-color: var(--color-action-variant);
+  color: var(--color-bg);
+  cursor: pointer;
+}
+
 .navbar {
   height: 7vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aquamarine;
+  background-color: var(--color-action);
   box-shadow: 2px 0 10px 1px silver;
   position: fixed;
   top: 0;
   padding: 0 2%;
+  z-index: 5000;
 }
 
 .navlinks {
@@ -55,11 +84,60 @@ a {
 
 .navlinks a:hover {
   border-radius: 10px;
-  background-color: rgb(0, 77, 77);
-  color: rgb(241, 251, 255);
+  background-color: var(--color-action-variant);
+  color: var(--color-bg);
 }
 
 section {
-  padding: 10vh 2% 0 2%;
+  padding: 10vh 10vh 0 2%;
   height: 100vh;
+}
+
+.caesarCipher-container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#shift-key {
+  background: none;
+  outline: none;
+  border: none;
+  width: 150px;
+  font-size: 30px;
+  text-align-last: center;
+}
+
+.caesarButton {
+  height : 40px;
+  width: 150px;
+  background-color: var(--color-action);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 0 10px 1px silver;
+}
+
+.caesarButton:hover {
+  cursor: pointer;
+  background-color: var(--color-action-variant);
+  color: var(--color-bg);
+}
+
+.caesarTextarea {
+  padding: 1%;
+  background-color: #f9fcff;
+  border: 3px solid silver;
+  border-radius: 10px;
+  box-shadow: 2px 0 10px 1px silver;
+}
+
+.caesarTextarea:hover {
+  border: 3px solid var(--color-action);
+}
+
+.caesarTextarea:focus {
+  outline: 3px solid var(--color-action-variant);
 }

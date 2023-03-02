@@ -8,6 +8,7 @@
   <title>Tests</title>
 </head>
 <body>
+  <a class="test-results" href="./coverage/lcov-report/index.html" target="_blank">T</br>E</br>S</br>T</br>S</br> </br>R</br>E</br>S</br>U</br>L</br>T</br>S</a>
   <header class="navbar">
     <a href="#"><h1>Tests Assignment</h1></a>
     <div class="navlinks">
@@ -30,10 +31,23 @@
     </section>
     <section class="caesarCipher" id="caesarCipher">
       <h2>Caesar Cipher</h2>
+      <div class="caesarCipher-container">
+        <textarea class="caesarTextarea" name="encryptText" id="encryptText" cols="60" rows="10"></textarea>
+        <button class="caesarButton" id="encryptButton" onclick="encrypt()">&#x1F4E5 Encrypt &#x1F4E5</button>
+        <label for="shift-key">Shift key:</label>
+        <input type="number" name="shift-key" id="shift-key" value="0">
+        <button class="caesarButton" id="decryptButton" onclick="decrypt()">&#x1F4E4 Decrypt &#x1F4E4</button>
+        <textarea class="caesarTextarea" name="decryptText" id="decryptText" cols="60" rows="10"></textarea>
+      </div>
     </section>
     <section class="analyzeArray" id="analyzeArray">
       <h2>Analyze Array</h2>
     </section>
   </main>
+  <script src="./src/capitalize.js"></script>
+  <script src="./src/reverseString.js"></script>
+  <script src="./src/calculator.js"></script>
+  <script src="./src/caesarCipher.js"></script>
+  <script src="./src/analyzeArray.js"></script>
 </body>
 </html>
