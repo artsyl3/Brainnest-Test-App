@@ -57,4 +57,8 @@ const decrypt = () => {
   encryptText.value = caesarCipher(Number(shiftKey.value)).decipher(decryptText.value);
 }
 
-module.exports = caesarCipher;
+module.exports = {
+  caesarCipher,
+  encrypt,
+  decrypt,
+};
