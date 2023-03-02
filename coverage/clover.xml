@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <coverage generated="1677709690699" clover="3.2.0">
   <project timestamp="1677709690699" name="All files">
     <metrics statements="33" coveredstatements="33" conditionals="10" coveredconditionals="10" methods="12" coveredmethods="12" elements="55" coveredelements="55" complexity="0" loc="33" ncloc="33" packages="1" files="3" classes="3"/>
@@ -10,7 +11,20 @@
       <line num="5" count="4" type="stmt"/>
       <line num="6" count="4" type="stmt"/>
       <line num="7" count="4" type="stmt"/>
+<coverage generated="1677744410837" clover="3.2.0">
+  <project timestamp="1677744410837" name="All files">
+    <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="21" coveredelements="21" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2"/>
+    <file name="analyzeArray.js" path="C:\Users\Omistaja\Documents\oma\Coding\brainnest-course2\fourth-week\Test-for-library-App\src\analyzeArray.js">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="2" count="26" type="stmt"/>
+      <line num="3" count="7" type="stmt"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="7" type="stmt"/>
+      <line num="6" count="7" type="stmt"/>
+      <line num="7" count="7" type="stmt"/>
       <line num="10" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
     </file>
     <file name="caesarCipher.js" path="D:\web development\Brainnest\Brainnest_advanced_Week4_Team\Test-for-library-App\src\caesarCipher.js">
       <metrics statements="20" coveredstatements="20" conditionals="10" coveredconditionals="10" methods="6" coveredmethods="6"/>
@@ -36,6 +50,7 @@
       <line num="42" count="1" type="stmt"/>
     </file>
     <file name="calculator.js" path="D:\web development\Brainnest\Brainnest_advanced_Week4_Team\Test-for-library-App\src\calculator.js">
+    <file name="calculator.js" path="C:\Users\Omistaja\Documents\oma\Coding\brainnest-course2\fourth-week\Test-for-library-App\src\calculator.js">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="3" type="stmt"/>
