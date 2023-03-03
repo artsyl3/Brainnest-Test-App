@@ -1,4 +1,9 @@
+/**
+ * @jest-environment jsdom
+ */
+
 const analyzeArray = require("../src/analyzeArray");
+
 
 test("analyzeArray function sorst the numbers in theb array correctly", () => {
   expect(analyzeArray([1, 2, 3, 4, 5])).toEqual({

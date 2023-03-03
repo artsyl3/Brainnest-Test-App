@@ -51,12 +51,24 @@
     </section>
     <section class="analyzeArray" id="analyzeArray">
       <h2>Analyze Array</h2>
+      <div class="container">
+        <p>Type in a list of numbers and the analyzer will put them in order:</p>
+        <input name="numbers" type="text" id="input-array" placeholder="List of numbers ex. 1,2,3,4" required>
+        <button id="analyzebtn">Analyze</button>
+        <h3>Array result:</h3>
+        <div class="result">
+          <p>Average: <span id="average"></span></p>
+          <p>Min: <span id="min"></span></p>
+          <p>Max: <span id="max"></span></p>
+          <p>Length: <span id="lenght"></span></p>
+        </div>
+        </div>
     </section>
   </main>
   <script src="./src/capitalize.js"></script>
   <script src="./src/reverseString.js"></script>
   <script src="./src/calculator.js"></script>
   <script src="./src/caesarCipher.js"></script>
-  <script src="./src/analyzeArray.js"></script>
+  <script src="./src/analyzeArray.js" ></script>
 </body>
 </html>

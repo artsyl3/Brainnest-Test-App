@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 const calculator = require("../src/calculator");
 
 describe("calculator object", () => {

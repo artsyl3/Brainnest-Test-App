@@ -1,7 +1,15 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../styles/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+
 :root {
-  --color-bg: #f1fbff;
-  --color-action: #7fffd4;
-  --color-action-variant: #004d4d;
+  --color-bg: #fff;
+  --color-action: rgb(230,245,208);
+  --color-action-variant: rgb(77,146,33);
+  --color-black: rgb(34, 33, 33);
 }
 
 * {
@@ -10,24 +18,31 @@
   margin: 0;
   font-size: 18px;
   scroll-behavior: smooth;
+  color: var(--color-black);
+  font-family: "Roboto";
 }
 
 main {
-  background-color: #f1fbff;
+  background-color: var(--color-bg);
 }
 
 h1 {
   font-size: 36px;
 }
 
-h2 {
+h2,
+h3 {
   font-size: 24px;
 }
 
+
 a {
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: var(--color-black);
   text-decoration: none;
+}
+p {
+  font-size: 20px;
 }
 
 .test-results {
@@ -114,7 +129,7 @@ section {
 .caesarButton {
   height : 40px;
   width: 150px;
-  background-color: var(--color-action);
+  background-color: var(--color-action-variant);
   border: none;
   border-radius: 10px;
   box-shadow: 2px 0 10px 1px silver;
@@ -122,24 +137,24 @@ section {
 
 .caesarButton:hover {
   cursor: pointer;
-  background-color: var(--color-action-variant);
-  color: var(--color-bg);
+  background-color: var(--color-action);
+  color: var(--color-black);
 }
 
 .caesarTextarea {
   padding: 1%;
-  background-color: #f9fcff;
+  background-color: var(--color-bg);
   border: 3px solid silver;
   border-radius: 10px;
   box-shadow: 2px 0 10px 1px silver;
 }
 
 .caesarTextarea:hover {
-  border: 3px solid var(--color-action);
+  border: 3px solid var(--color-action-variant);
 }
 
 .caesarTextarea:focus {
-  outline: 3px solid var(--color-action-variant);
+  outline: 3px solid var(--color-action);
 }
 
 .container {
@@ -151,7 +166,8 @@ section {
       box-shadow: 2px 0 10px 1px silver;
     }
 
-    input[type=number] {
+    input[type=number],
+    input[type=text] {
       display: block;
       margin-bottom: 10px;
       padding: 5px;
@@ -166,7 +182,7 @@ section {
       padding: 10px 20px;
       margin-right: 10px;
       margin-bottom: 10px;
-      background-color: rgb(0, 77, 77);
+      background-color: var(--color-action-variant);
       color: #fff;
       border: none;
       border-radius: 10px;
@@ -174,6 +190,16 @@ section {
     }
 
     button:hover {
-      background-color: aquamarine;
+      background-color: var(--color-action);
       color: rgb(0, 0, 0);
+    }
+    .container p {
+      padding: 2% 0;
+    }
+    .container h3 {
+      margin-top: 2%;
+    }
+    .result {
+      display: flex;
+      gap: 4%;
     }
