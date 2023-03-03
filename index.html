@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css">
+  <script src="./src/analyzeArray.js" refer></script>
   <title>Tests</title>
 </head>
 <body>
@@ -51,6 +52,12 @@
     </section>
     <section class="analyzeArray" id="analyzeArray">
       <h2>Analyze Array</h2>
+      <p>Type in a list of numbers and the analyzer will put them in order</p>
+      <form action="" id="analyze-form">
+        <label for="numbers">Numbers:</label>
+        <input name="numbers" type="text" required>
+        <button onclick="createResponse()">Analyze</button>
+      </form>
     </section>
   </main>
   <script src="./src/capitalize.js"></script>

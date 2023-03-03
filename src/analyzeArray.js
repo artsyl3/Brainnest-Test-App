@@ -1,3 +1,4 @@
+
 const analyzeArray = (arr) => {
   const sum = arr.reduce((a, b) => a + b,0);
   const average = sum / arr.length;
@@ -12,3 +13,4 @@ const obj = analyzeArray([-1,-2,-4,-5]);
 console.log(obj)
 
 module.exports = analyzeArray;
+
