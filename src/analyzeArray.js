@@ -10,9 +10,7 @@ const analyzeArray = (arr) => {
 
 
 const showResult = (event) => {
-  if(event != undefined) {
   event.preventDefault();
-  }
   const input = document.getElementById("input-array");
   const average = document.getElementById("average");
   const min = document.getElementById("min");

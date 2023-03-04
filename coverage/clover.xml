@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677930991314" clover="3.2.0">
-  <project timestamp="1677930991314" name="All files">
-    <metrics statements="86" coveredstatements="86" conditionals="18" coveredconditionals="18" methods="22" coveredmethods="22" elements="126" coveredelements="126" complexity="0" loc="86" ncloc="86" packages="1" files="5" classes="5"/>
-    <file name="analyzeArray.js" path="C:\coding\brainnest frontend training course\Advanced\Test-for-library-App\src\analyzeArray.js">
-      <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+<coverage generated="1677954303605" clover="3.2.0">
+  <project timestamp="1677954303606" name="All files">
+    <metrics statements="97" coveredstatements="90" conditionals="18" coveredconditionals="18" methods="24" coveredmethods="22" elements="139" coveredelements="130" complexity="0" loc="97" ncloc="97" packages="1" files="5" classes="5"/>
+    <file name="analyzeArray.js" path="C:\Users\Omistaja\Documents\oma\Coding\brainnest-course2\fourth-week\Test-for-library-App\src\analyzeArray.js">
+      <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="26" type="stmt"/>
       <line num="4" count="7" type="stmt"/>
@@ -19,15 +19,16 @@
       <line num="17" count="1" type="stmt"/>
       <line num="18" count="1" type="stmt"/>
       <line num="19" count="1" type="stmt"/>
-      <line num="20" count="4" type="stmt"/>
-      <line num="22" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="4" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
       <line num="24" count="1" type="stmt"/>
       <line num="25" count="1" type="stmt"/>
       <line num="26" count="1" type="stmt"/>
-      <line num="33" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
     </file>
-    <file name="caesarCipher.js" path="C:\coding\brainnest frontend training course\Advanced\Test-for-library-App\src\caesarCipher.js">
+    <file name="caesarCipher.js" path="C:\Users\Omistaja\Documents\oma\Coding\brainnest-course2\fourth-week\Test-for-library-App\src\caesarCipher.js">
       <metrics statements="30" coveredstatements="30" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="8"/>
       <line num="2" count="1" type="stmt"/>
       <line num="4" count="30" type="stmt"/>
@@ -60,7 +61,7 @@
       <line num="56" count="1" type="stmt"/>
       <line num="59" count="1" type="stmt"/>
     </file>
-    <file name="calculator.js" path="C:\coding\brainnest frontend training course\Advanced\Test-for-library-App\src\calculator.js">
+    <file name="calculator.js" path="C:\Users\Omistaja\Documents\oma\Coding\brainnest-course2\fourth-week\Test-for-library-App\src\calculator.js">
       <metrics statements="26" coveredstatements="26" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="2" type="stmt"/>
@@ -89,19 +90,29 @@
       <line num="56" count="1" type="stmt"/>
       <line num="60" count="1" type="stmt"/>
     </file>
-    <file name="capitalize.js" path="C:\coding\brainnest frontend training course\Advanced\Test-for-library-App\src\capitalize.js">
-      <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+    <file name="capitalize.js" path="C:\Users\Omistaja\Documents\oma\Coding\brainnest-course2\fourth-week\Test-for-library-App\src\capitalize.js">
+      <metrics statements="10" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
       <line num="2" count="7" type="cond" truecount="4" falsecount="0"/>
       <line num="3" count="4" type="stmt"/>
       <line num="5" count="3" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
     </file>
-    <file name="reverseString.js" path="C:\coding\brainnest frontend training course\Advanced\Test-for-library-App\src\reverseString.js">
-      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+    <file name="reverseString.js" path="C:\Users\Omistaja\Documents\oma\Coding\brainnest-course2\fourth-week\Test-for-library-App\src\reverseString.js">
+      <metrics statements="8" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
       <line num="2" count="7" type="cond" truecount="2" falsecount="0"/>
       <line num="3" count="3" type="stmt"/>
       <line num="5" count="4" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

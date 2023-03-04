@@ -1,4 +1,8 @@
-const capitalize = require("../src/capitalize");
+/**
+ * @jest-environment jsdom
+ */
+
+const { capitalize, showCapitalize } = require("../src/capitalize");
 
 describe('capitalize', () => {
     test('capitalizes the first character of a string', () => {
@@ -11,4 +15,3 @@ describe('capitalize', () => {
       expect(capitalize(123)).toBe('');
     });
   });
-  
