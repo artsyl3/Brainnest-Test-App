@@ -8,15 +8,13 @@ const analyzeArray = (arr) => {
   return { average, min, max, length };
 }
 
-const button =  document.getElementById('analyzebtn');
-const input = document.getElementById("input-array");
-const average = document.getElementById("average");
-const min = document.getElementById("min");
-const max = document.getElementById("max");
-const length = document.getElementById("lenght");
 
-button.addEventListener('click', () => {
-  console.log("yey")
+const showResult = () => {
+  const input = document.getElementById("input-array");
+  const average = document.getElementById("average");
+  const min = document.getElementById("min");
+  const max = document.getElementById("max");
+  const length = document.getElementById("lenght");
   const array = input.value.split(",")
   const arrayFinal = array.map(function (x) {
     return parseInt(x);
@@ -26,11 +24,14 @@ button.addEventListener('click', () => {
   min.textContent = result.min;
   max.textContent = result.max;
   length.textContent = result.length;
-});
+};
 
 
 
 
 
-module.exports = analyzeArray;
+module.exports = { 
+  analyzeArray, 
+  showResult 
+};
 

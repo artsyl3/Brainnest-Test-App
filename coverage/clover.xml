@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677868185083" clover="3.2.0">
-  <project timestamp="1677868185083" name="All files">
-    <metrics statements="39" coveredstatements="39" conditionals="16" coveredconditionals="16" methods="10" coveredmethods="10" elements="65" coveredelements="65" complexity="0" loc="39" ncloc="39" packages="1" files="3" classes="3"/>
+<coverage generated="1677915198691" clover="3.2.0">
+  <project timestamp="1677915198691" name="All files">
+    <metrics statements="61" coveredstatements="61" conditionals="16" coveredconditionals="16" methods="14" coveredmethods="14" elements="91" coveredelements="91" complexity="0" loc="61" ncloc="61" packages="1" files="4" classes="4"/>
+    <file name="analyzeArray.js" path="C:\Users\Omistaja\Documents\oma\Coding\brainnest-course2\fourth-week\Test-for-library-App\src\analyzeArray.js">
+      <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="26" type="stmt"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="7" type="stmt"/>
+      <line num="6" count="7" type="stmt"/>
+      <line num="7" count="7" type="stmt"/>
+      <line num="8" count="7" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+    </file>
     <file name="caesarCipher.js" path="C:\Users\Omistaja\Documents\oma\Coding\brainnest-course2\fourth-week\Test-for-library-App\src\caesarCipher.js">
       <metrics statements="31" coveredstatements="31" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="8"/>
       <line num="2" count="1" type="stmt"/>
