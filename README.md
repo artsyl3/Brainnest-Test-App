@@ -4,7 +4,7 @@ Unit Testing using Jest. Team project.
 
 ## Preview
 
-See the final product: Link to come later
+See the final product: https://artsyl3.github.io/Brainnest-Test-App/
 
 ## About the project
 
