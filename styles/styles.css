@@ -129,6 +129,8 @@ section {
 .caesarButton {
   height : 40px;
   width: 150px;
+  padding: 0;
+  margin: 0;
   background-color: var(--color-action-variant);
   border: none;
   border-radius: 10px;
@@ -144,17 +146,13 @@ section {
 .caesarTextarea {
   padding: 1%;
   background-color: var(--color-bg);
-  border: 3px solid silver;
-  border-radius: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
   box-shadow: 2px 0 10px 1px silver;
 }
 
-.caesarTextarea:hover {
-  border: 3px solid var(--color-action-variant);
-}
-
 .caesarTextarea:focus {
-  outline: 3px solid var(--color-action);
+  outline: 1px solid black;
 }
 
 .container {
