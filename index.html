@@ -28,18 +28,21 @@
     </section>
     <section class="calculator" id="calculator">
       <h2>Calculator</h2>
+      <p>Enter two numbers and click any of the buttons to get your result.</p>
       <div class="container">
         <input type="number" id="num1" placeholder="Enter first number">
         <input type="number" id="num2" placeholder="Enter second number">
-        <button id="add">Add</button>
-        <button id="subtract">Subtract</button>
-        <button id="multiply">Multiply</button>
-        <button id="divide">Divide</button>
+        <button onclick="additionAddToDOM()" id="add">Add</button>
+        <button onclick="subtractAddToDOM()" id="subtract">Subtract</button>
+        <button onclick="multiplyAddToDOM()" id="multiply">Multiply</button>
+        <button onclick="divideAddToDOM()" id="divide">Divide</button>
         <div id="result"></div>
       </div>
     </section>
     <section class="caesarCipher" id="caesarCipher">
       <h2>Caesar Cipher</h2>
+      <p>Enter the message you'd like to encrypt or decrypt in the top box.
+        <br>Then choose the amount you'd like to shift using the key.</p>
       <div class="caesarCipher-container">
         <textarea class="caesarTextarea" name="encryptText" id="encryptText" cols="93" rows="10"></textarea>
         <button class="caesarButton" id="encryptButton" onclick="encrypt()">&#x1F4E5 Encrypt &#x1F4E5</button>
@@ -51,8 +54,8 @@
     </section>
     <section class="analyzeArray" id="analyzeArray">
       <h2>Analyze Array</h2>
+      <p>Type in a list of numbers and the analyzer will put them in order:</p>
       <div class="container">
-        <p>Type in a list of numbers and the analyzer will put them in order:</p>
         <input name="numbers" type="text" id="input-array" placeholder="List of numbers ex. 1,2,3,4" required>
         <button id="analyzebtn" onclick="showResult()">Analyze</button>
         <h3>Array result:</h3>

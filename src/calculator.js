@@ -16,44 +16,51 @@ const calculator = {
   },
 };
 
-const addBtn = document.getElementById("add");
-const subtractBtn = document.getElementById("subtract");
-const multiplyBtn = document.getElementById("multiply");
-const divideBtn = document.getElementById("divide");
-const num1Input = document.getElementById("num1");
-const num2Input = document.getElementById("num2");
-const resultDiv = document.getElementById("result");
-
-addBtn.addEventListener("click", () => {
-  const num1 = Number(num1Input.value);
-  const num2 = Number(num2Input.value);
-  const result = calculator.add(num1, num2);
-  resultDiv.textContent = result;
-});
-
-subtractBtn.addEventListener("click", () => {
-  const num1 = Number(num1Input.value);
-  const num2 = Number(num2Input.value);
-  const result = calculator.subtract(num1, num2);
-  resultDiv.textContent = result;
-});
-
-multiplyBtn.addEventListener("click", () => {
-  const num1 = Number(num1Input.value);
-  const num2 = Number(num2Input.value);
-  const result = calculator.multiply(num1, num2);
-  resultDiv.textContent = result;
-});
-
-divideBtn.addEventListener("click", () => {
-  const num1 = Number(num1Input.value);
-  const num2 = Number(num2Input.value);
+function additionAddToDOM() {
+  const num1Input = document.getElementById("num1");
+  const num2Input = document.getElementById("num2");
+  const resultDiv = document.getElementById("result");
+  resultDiv.textContent = calculator.add(
+    Number(num1Input.value),
+    Number(num2Input.value)
+  );
+}
+function subtractAddToDOM() {
+  const num1Input = document.getElementById("num1");
+  const num2Input = document.getElementById("num2");
+  const resultDiv = document.getElementById("result");
+  resultDiv.textContent = calculator.subtract(
+    Number(num1Input.value),
+    Number(num2Input.value)
+  );
+}
+function multiplyAddToDOM() {
+  const num1Input = document.getElementById("num1");
+  const num2Input = document.getElementById("num2");
+  const resultDiv = document.getElementById("result");
+  resultDiv.textContent = calculator.multiply(
+    Number(num1Input.value),
+    Number(num2Input.value)
+  );
+}
+function divideAddToDOM() {
+  const num1Input = document.getElementById("num1");
+  const num2Input = document.getElementById("num2");
+  const resultDiv = document.getElementById("result");
   try {
-    const result = calculator.divide(num1, num2);
-    resultDiv.textContent = result;
+    resultDiv.textContent = calculator.divide(
+      Number(num1Input.value),
+      Number(num2Input.value)
+    );
   } catch (error) {
     resultDiv.textContent = error.message;
   }
-});
+}
 
-module.exports = calculator;
+module.exports = {
+  calculator,
+  additionAddToDOM,
+  subtractAddToDOM,
+  multiplyAddToDOM,
+  divideAddToDOM,
+};
