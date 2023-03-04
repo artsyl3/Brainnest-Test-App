@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677930599403" clover="3.2.0">
-  <project timestamp="1677930599403" name="All files">
+<coverage generated="1677930991314" clover="3.2.0">
+  <project timestamp="1677930991314" name="All files">
     <metrics statements="86" coveredstatements="86" conditionals="18" coveredconditionals="18" methods="22" coveredmethods="22" elements="126" coveredelements="126" complexity="0" loc="86" ncloc="86" packages="1" files="5" classes="5"/>
     <file name="analyzeArray.js" path="C:\coding\brainnest frontend training course\Advanced\Test-for-library-App\src\analyzeArray.js">
       <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
