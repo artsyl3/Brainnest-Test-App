@@ -12,7 +12,8 @@ DESCRIPTION
 
 ## Features
 
-- 
+- A website where you can test each function.
+- Test results can be reached on the right hand side
 
 ## Technologies
 - JavaScript
