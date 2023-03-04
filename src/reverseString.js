@@ -5,4 +5,11 @@ function reverseString(str) {
     return str.split('').reverse().join('');
   }
 
+  function Rv(inputText) {
+    return reverseString(inputText);
+  }
+  
+  
+
+
 module.exports = reverseString;

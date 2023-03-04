@@ -21,9 +21,15 @@
   <main>
     <section class="capitalize" id="capitalize">
       <h2>Capitalize</h2>
+      <input id="CapitalizeId" type="text">
+      <button onclick="document.getElementById('CapitalizedRes').innerText = Cp(document.getElementById('CapitalizeId').value)">Click me</button>
+      <p id="CapitalizedRes"></p>
     </section>
     <section class="reverseString" id="reverseString">
       <h2>Reverse String</h2>
+      <input id="ReverseId" type="text">
+      <button onclick="document.getElementById('ReverseRes').innerText = Rv(document.getElementById('ReverseId').value)">Click me</button>
+      <p id="ReverseRes"></p>
     </section>
     <section class="calculator" id="calculator">
       <h2>Calculator</h2>
@@ -34,6 +40,8 @@
     <section class="analyzeArray" id="analyzeArray">
       <h2>Analyze Array</h2>
     </section>
+    <script src="src/capitalize.js"></script>
+    <script src="src/reverseString.js"></script>
   </main>
 </body>
 </html>
