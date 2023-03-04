@@ -5,9 +5,9 @@ function reverseString(str) {
   return str.split('').reverse().join('');
 }
 const showReverse = () => {
-  const input = document.getElementById('ReverseId').value;
-  const result = reverseString(input);
-  document.getElementById('ReverseRes').innerText = result;
+  const input = document.getElementById('ReverseId');
+  const result = document.getElementById('ReverseRes');
+  result.innerText = reverseString(input.value);
 }
 
-module.exports = reverseString;
+module.exports = { reverseString,  showReverse};

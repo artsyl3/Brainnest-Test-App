@@ -9,7 +9,7 @@ const capitalize = (str) => {
 const showCapitalize = () => {
   const input = document.getElementById('CapitalizeId');
   const resultPara = document.getElementById('CapitalizedRes');
-  resultPara.value = capitalize(input.value);
+  resultPara.innerText = capitalize(input.value);
 }
 
 module.exports = {

@@ -32,6 +32,6 @@ describe ("Testing Capitalize dom manipulation", () => {
       button.addEventListener('click', showCapitalize)
       button.click();
 
-      expect(resultPara.value).toBe('Hello');
+      expect(resultPara.innerText).toBe('Hello');
     });
   });
