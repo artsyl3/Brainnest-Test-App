@@ -1,27 +1,70 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../styles/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+
+:root {
+  --color-bg: #fff;
+  --color-action: rgb(230,245,208);
+  --color-action-variant: rgb(77,146,33);
+  --color-black: rgb(34, 33, 33);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-size: 18px;
   scroll-behavior: smooth;
+  color: var(--color-black);
+  font-family: "Roboto";
 }
 
 main {
-  background-color: rgb(241, 251, 255);
+  background-color: var(--color-bg);
 }
 
 h1 {
   font-size: 36px;
 }
 
-h2 {
+h2,
+h3 {
   font-size: 24px;
 }
 
+
 a {
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: var(--color-black);
   text-decoration: none;
+}
+p {
+  font-size: 20px;
+}
+
+.test-results {
+  height: 93vh;
+  width: 7vh;
+  position: fixed;
+  top: 7vh;
+  right: 0;
+  background-color: var(--color-action);
+  box-shadow: -5px 10px 10px 1px silver;
+  z-index: 5001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.test-results:hover {
+  border-radius: 10px;
+  background-color: var(--color-action-variant);
+  color: var(--color-bg);
+  cursor: pointer;
 }
 
 .navbar {
@@ -30,11 +73,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aquamarine;
+  background-color: var(--color-action);
   box-shadow: 2px 0 10px 1px silver;
   position: fixed;
   top: 0;
   padding: 0 2%;
+  z-index: 5000;
 }
 
 .navlinks {
@@ -55,11 +99,113 @@ a {
 
 .navlinks a:hover {
   border-radius: 10px;
-  background-color: rgb(0, 77, 77);
-  color: rgb(241, 251, 255);
+  background-color: var(--color-action-variant);
+  color: var(--color-bg);
 }
 
 section {
-  padding: 10vh 2% 0 2%;
+  padding: 10vh 10vh 0 2%;
   height: 100vh;
 }
+
+.caesarCipher-container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#shift-key {
+  background: none;
+  outline: none;
+  border: none;
+  width: 150px;
+  font-size: 30px;
+  text-align-last: center;
+}
+
+.caesarButton {
+  height : 40px;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-action-variant);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 0 10px 1px silver;
+}
+
+.caesarButton:hover {
+  cursor: pointer;
+  background-color: var(--color-action);
+  color: var(--color-black);
+}
+
+.caesarTextarea {
+  padding: 1%;
+  background-color: var(--color-bg);
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 2px 0 10px 1px silver;
+}
+
+.caesarTextarea:focus {
+  outline: 1px solid black;
+}
+
+.container {
+      margin: 100px auto;
+      width: 50%;
+      border: 1px solid rgb(0, 0, 0);
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 2px 0 10px 1px silver;
+    }
+
+    input[type=number],
+    input[type=text] {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 3px;
+    }
+
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: var(--color-action-variant);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--color-action);
+      color: rgb(0, 0, 0);
+    }
+    .container p {
+      padding: 2% 0;
+    }
+    .container h3 {
+      margin-top: 2%;
+    }
+    .result {
+      display: flex;
+      gap: 4%;
+    }
+
+
+
+    const showReverse = () => {
+      const input = document.getElementById('ReverseId').value;
+      const result = reverseString(input);
+      document.getElementById('ReverseRes').innerText = result;
+    }

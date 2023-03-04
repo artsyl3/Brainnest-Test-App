@@ -39,4 +39,25 @@ const caesar = (type, string, key) => {
   return result.join("");
 }
 
-module.exports = caesarCipher;
+
+
+//
+const encrypt = () => {
+  const encryptText = document.getElementById("encryptText");
+  const decryptText = document.getElementById("decryptText");
+  const shiftKey = document.getElementById("shift-key");
+  decryptText.value = caesarCipher(Number(shiftKey.value)).encipher(encryptText.value);
+}
+
+const decrypt = () => {
+  const encryptText = document.getElementById("encryptText");
+  const decryptText = document.getElementById("decryptText");
+  const shiftKey = document.getElementById("shift-key");
+  encryptText.value = caesarCipher(Number(shiftKey.value)).decipher(decryptText.value);
+}
+
+module.exports = {
+  caesarCipher,
+  encrypt,
+  decrypt,
+};

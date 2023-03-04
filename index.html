@@ -8,6 +8,7 @@
   <title>Tests</title>
 </head>
 <body>
+  <a class="test-results" href="./coverage/lcov-report/index.html" target="_blank">T</br>E</br>S</br>T</br>S</br> </br>R</br>E</br>S</br>U</br>L</br>T</br>S</a>
   <header class="navbar">
     <a href="#"><h1>Tests Assignment</h1></a>
     <div class="navlinks">
@@ -33,15 +34,52 @@
     </section>
     <section class="calculator" id="calculator">
       <h2>Calculator</h2>
+      <p>Enter two numbers and click any of the buttons to get your result.</p>
+      <div class="container">
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button onclick="additionAddToDOM()" id="add">Add</button>
+        <button onclick="subtractAddToDOM()" id="subtract">Subtract</button>
+        <button onclick="multiplyAddToDOM()" id="multiply">Multiply</button>
+        <button onclick="divideAddToDOM()" id="divide">Divide</button>
+        <div id="result"></div>
+      </div>
     </section>
     <section class="caesarCipher" id="caesarCipher">
       <h2>Caesar Cipher</h2>
+      <p>Enter the message you'd like to encrypt or decrypt in the top box.
+        <br>Then choose the amount you'd like to shift using the key.</p>
+      <div class="caesarCipher-container">
+        <textarea class="caesarTextarea" name="encryptText" id="encryptText" cols="93" rows="10"></textarea>
+        <button class="caesarButton" id="encryptButton" onclick="encrypt()">&#x1F4E5 Encrypt &#x1F4E5</button>
+        <label for="shift-key">Shift key:</label>
+        <input type="number" name="shift-key" id="shift-key" value="0">
+        <button class="caesarButton" id="decryptButton" onclick="decrypt()">&#x1F4E4 Decrypt &#x1F4E4</button>
+        <textarea class="caesarTextarea" name="decryptText" id="decryptText" cols="93" rows="10"></textarea>
+      </div>
     </section>
     <section class="analyzeArray" id="analyzeArray">
       <h2>Analyze Array</h2>
+      <p>Type in a list of numbers and the analyzer will put them in order:</p>
+      <div class="container">
+        <input name="numbers" type="text" id="input-array" placeholder="List of numbers ex. 1,2,3,4" required>
+        <button id="analyzebtn" onclick="showResult()">Analyze</button>
+        <h3>Array result:</h3>
+        <div class="result">
+          <p>Average: <span id="average"></span></p>
+          <p>Min: <span id="min"></span></p>
+          <p>Max: <span id="max"></span></p>
+          <p>Length: <span id="lenght"></span></p>
+        </div>
+        </div>
     </section>
     <script src="src/capitalize.js"></script>
     <script src="src/reverseString.js"></script>
   </main>
+  <script src="./src/capitalize.js"></script>
+  <script src="./src/reverseString.js"></script>
+  <script src="./src/calculator.js"></script>
+  <script src="./src/caesarCipher.js"></script>
+  <script src="./src/analyzeArray.js" ></script>
 </body>
 </html>
