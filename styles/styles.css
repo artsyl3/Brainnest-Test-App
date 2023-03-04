@@ -201,3 +201,15 @@ section {
       display: flex;
       gap: 4%;
     }
+    .error-message {
+      font-size: 1rem;
+      padding: 0;
+      margin-top: -10px;
+      color: tomato;
+    }
+    input  ~ .error-message {
+      visibility: hidden;
+    }
+    input:invalid ~ .error-message {
+      visibility: visible;
+    }
