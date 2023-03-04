@@ -7,13 +7,12 @@ const capitalize = (str) => {
 
 
 const showCapitalize = () => {
-  const input = document.getElementById('CapitalizeId').value;
-  let result = capitalize(input);
-  console.log(input)
-  document.getElementById('CapitalizedRes').innerText = result;
+  const input = document.getElementById('CapitalizeId');
+  const resultPara = document.getElementById('CapitalizedRes');
+  resultPara.value = capitalize(input.value);
 }
 
 module.exports = {
   capitalize,
-  showCapitalize
+  showCapitalize,
 };
